@@ -1,0 +1,5 @@
+一、请使用IDEA工具导入，open。
+二、导入数据库文件。
+	ssm+redis+lucene（附带商品表数据）.sql
+三、修改工程中的数据库密码。
+四、体验redis前请务必先安装配置好redis。
