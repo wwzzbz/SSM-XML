@@ -1,0 +1,1 @@
+### SSM框架基于xml构建商品检索和积分排名系统（Spring+SpringMVC+Mybatis+Lucene+Redis+Maven）
