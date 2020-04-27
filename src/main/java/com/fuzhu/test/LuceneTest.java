@@ -9,6 +9,7 @@ import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
+import org.apache.lucene.document.StringField;
 import org.apache.lucene.index.*;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.queryparser.classic.QueryParser;
@@ -44,7 +45,7 @@ public class LuceneTest {
 //            Directory directory = new RAMDirectory();//索引建立在内存中！！！
             Directory directory = FSDirectory.open(new File("F:/lucene/index01"));//索引创建在硬盘上。
             //2.创建IndexWriter，用它来写索引
-            IndexWriterConfig iwc = new IndexWriterConfig(matchVersion, analyzer);
+            IndexWriterConfig iwc = new IndexWriterConfig( matchVersion,analyzer);
             writer = new IndexWriter(directory, iwc);
             //3.创建Document对象
             Document doc = null;

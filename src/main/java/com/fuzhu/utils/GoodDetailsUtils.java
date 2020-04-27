@@ -2,7 +2,6 @@ package com.fuzhu.utils;
 
 import com.fuzhu.entity.GoodDetails;
 import org.apache.lucene.document.Document;
-import org.apache.lucene.document.IntField;
 import org.apache.lucene.document.StringField;
 import org.apache.lucene.document.Field.Store;
 import org.apache.lucene.document.TextField;

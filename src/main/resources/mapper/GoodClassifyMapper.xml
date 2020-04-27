@@ -36,7 +36,7 @@
 
     <!-- 根据商品种类ID查询所属类别的商品信息 ,目前用于建立索引-->
     <select id="findGoodDetailsByClassifyID"
-            parameterType="integer" resultType="com.fuzhu.entity.GoodDetails">
+            parameterType="integer" resultMap="goodDetailsResultMap">
         select
         d.Good_ID ,
         d.Classify_ID,
